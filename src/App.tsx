@@ -1,5 +1,12 @@
+import AuthContextProvider from './contexts/AuthContext';
+import Routes from './routes';
+
 const App: React.FC = () => {
-  return <h1>Hello Let Me Ask</h1>;
+  return (
+    <AuthContextProvider>
+      <Routes />
+    </AuthContextProvider>
+  );
 };
 
 export default App;
