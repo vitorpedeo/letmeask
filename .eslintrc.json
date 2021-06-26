@@ -28,6 +28,8 @@
     "react/prop-types": "off",
     "react/jsx-props-no-spreading": "off",
     "react/jsx-filename-extension": ["error", { "extensions": [".tsx"] }],
+    "no-unused-vars": ["warn", { "args": "none" }],
+    "@typescript-eslint/no-unused-vars": ["warn", { "args": "none" }],
     "@typescript-eslint/no-use-before-define": ["error"],
     "import/extensions": [
       "error",

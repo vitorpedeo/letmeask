@@ -46,6 +46,14 @@ const Home: React.FC = () => {
       return;
     }
 
+    if (roomRef.val().endedAt) {
+      alert('Sala finalizada');
+
+      setRoomId('');
+
+      return;
+    }
+
     push(`/rooms/${roomId}`);
   };
 
