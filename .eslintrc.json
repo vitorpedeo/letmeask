@@ -22,11 +22,12 @@
     "@typescript-eslint"
   ],
   "rules": {
+    "no-use-before-define": "off",
+    "no-alert": "off",
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
     "react/jsx-props-no-spreading": "off",
     "react/jsx-filename-extension": ["error", { "extensions": [".tsx"] }],
-    "no-use-before-define": "off",
     "@typescript-eslint/no-use-before-define": ["error"],
     "import/extensions": [
       "error",

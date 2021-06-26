@@ -68,7 +68,7 @@ const AuthContextProvider: React.FC = ({ children }) => {
         throw new Error('User not found. Please, try another account.');
       }
     } catch (error) {
-      //
+      alert(error);
     }
   };
 
