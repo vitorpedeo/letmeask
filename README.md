@@ -5,5 +5,5 @@
 </p>
 
 <p align="center">
-  <img src="./.github/image.png" alt="Letmeaks" />
+  <img src="./.github/image.png" alt="Letmeask" />
 </p>
