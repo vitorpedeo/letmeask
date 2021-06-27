@@ -1,3 +1,5 @@
+import classnames from 'classnames';
+
 import './styles.scss';
 
 type QuestionProps = {
@@ -6,11 +8,25 @@ type QuestionProps = {
     name: string;
     avatar: string;
   };
+  isAnswered?: boolean;
+  isHighlighted?: boolean;
 };
 
-const Question: React.FC<QuestionProps> = ({ children, content, author }) => {
+const Question: React.FC<QuestionProps> = ({
+  children,
+  content,
+  author,
+  isAnswered = false,
+  isHighlighted = false,
+}) => {
   return (
-    <div className="question">
+    <div
+      className={classnames(
+        'question',
+        { answered: isAnswered },
+        { highlighted: isHighlighted && !isAnswered },
+      )}
+    >
       <p>{content}</p>
 
       <footer>

@@ -35,7 +35,7 @@ const NewRoom: React.FC = () => {
       authorId: user?.id,
     });
 
-    push(`/rooms/${firebaseRoom.key}`);
+    push(`/admin/rooms/${firebaseRoom.key}`);
   };
 
   return (
